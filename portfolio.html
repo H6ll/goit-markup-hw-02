@@ -4,157 +4,199 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio page</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Портфоліо</title>
   </head>
-  <body>
-    <!-- Navigation -->
+  <body class="page">
+    <!--Heder section-->
     <header class="header">
-      <a href="#" class="logo-header"><span class="accent">Web</span>Studio</a>
-      <nav>
-        <ul class="list">
-          <li><a class="nav-page" href="./index.html">Студія</a></li>
-          <li><a class="nav-page" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="nav-page" href="#">Контакти</a></li>
+      <nav class="header-nav">
+        <a class="header-logo link" href="./index.html">
+          Web<span class="header-logo-studio">Studio</span></a
+        >
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="header-link link" href="">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <ul class="list">
-        <li>
-          <a class="contact-header" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-header" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
-    <!-- Portfolio Works -->
-    <main>
-      <section>
-        <ul class="list">
-          <li><button type="button" class="filter-button">Усі</button></li>
+      <address class="address">
+        <ul class="heder-address-list list">
           <li>
-            <button type="button" class="filter-button">Веб-сайти</button>
-          </li>
-          <li><button type="button" class="filter-button">Додатки</button></li>
-          <li><button type="button" class="filter-button">Дизайн</button></li>
-          <li>
-            <button type="button" class="filter-button">Маркетинг</button>
-          </li>
-        </ul>
-        <h1 class="secondary-title">Наші роботи</h1>
-        <ul class="list">
-          <li>
-            <a>
-              <img src="./images/techno.jpeg" alt="laptop opened" width="370" />
-              <h2 class="sample-title">Технокряк</h2>
-              <p class="sample-description">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <img
-                src="./images/New-Orlean.jpeg"
-                alt="two men playing basketball"
-                width="370"
-              />
-              <h2 class="sample-title">New Orlean vs Golden Star</h2>
-              <p class="sample-description">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <img
-                src="./images/Seafood.jpeg"
-                alt="restaurant's logo"
-                width="370"
-              />
-              <h2 class="sample-title">Ресторан Seafood</h2>
-              <p class="sample-description">Додаток</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="./images/Prime.jpeg" alt="headphones" width="370" />
-              <h2 class="sample-title">Проєкт Prime</h2>
-              <p class="sample-description">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="./images/Boxes.jpeg" alt="two boxes" width="370" />
-              <h2 class="sample-title">Проєкт Boxes</h2>
-              <p class="sample-description">Додаток</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="./images/Inspiration.jpeg" alt="monitor" width="370" />
-              <h2 class="sample-title">Inspiration has no Borders</h2>
-              <p class="sample-description">Веб-сайт</p></a
+            <a class="header-address-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
           <li>
-            <a>
-              <img src="./images/Limited.jpeg" alt="book opened" width="370" />
-              <h2 class="sample-title">Видання Limited Edition</h2>
-              <p class="sample-description">Дизайн</p>
-            </a>
+            <a class="header-address-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </header>
+    <!--Main block-->
+    <!--Portfolio-->
+    <main>
+      <section id="folio" class="section portfolio">
+        <h1>Portfolio</h1>
+        <ul class="portfolio-list-btn list">
+          <li>
+            <button class="portfolio-btn" type="button">All</button>
           </li>
           <li>
-            <a>
-              <img src="./images/LAB.jpeg" alt="label" width="370" />
-              <h2 class="sample-title">Проєкт LAB</h2>
-              <p class="sample-description">Маркетинг</p>
-            </a>
+            <button class="portfolio-btn" type="button">Web Site</button>
           </li>
           <li>
-            <a>
+            <button class="portfolio-btn" type="button">App</button>
+          </li>
+          <li>
+            <button class="portfolio-btn" type="button">Design</button>
+          </li>
+          <li>
+            <button class="portfolio-btn" type="button">Marketing</button>
+          </li>
+        </ul>
+        <ul class="portfolio-list list">
+          <li>
+            <a class="link" href=""
+              >Banking App Interface Concept
               <img
-                src="./images/Growing-Business.jpeg"
-                alt="person typing on a laptop"
-                width="370"
+                src="./images/portfolio/img1.jpg"
+                alt="Website"
+                width="360"
               />
-              <h2 class="sample-title">Growing Business</h2>
-              <p class="sample-description">Додаток</p>
+              <h2 class="portfolio-title">Banking App Interface Concept</h2>
+              <p class="portfolio-item">App</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Cashless Payment
+              <img
+                src="./images/portfolio/img2.jpg"
+                alt="Mobile phone"
+                width="360"
+              />
+              <h2 class="portfolio-title">Cashless Payment</h2>
+              <p class="portfolio-item">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Meditation App
+              <img
+                src="./images/portfolio/img3.jpg"
+                alt="Notebook"
+                width="360"
+              />
+              <h2 class="portfolio-title">Meditation App</h2>
+              <p class="portfolio-item">App</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Taxi Service
+              <img
+                src="./images/portfolio/img4.jpg"
+                alt="Car Taxi"
+                width="360"
+              />
+              <h2 class="portfolio-title">Taxi Service</h2>
+              <p class="portfolio-item">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Screen Illustrations
+              <img
+                src="./images/portfolio/img5.jpg"
+                alt="Design phone"
+                width="360"
+              />
+              <h2 class="portfolio-title">Screen Illustrations</h2>
+              <p class="portfolio-item">Design</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Online Course
+              <img
+                src="./images/portfolio/img6.jpg"
+                alt="The girl laughs"
+                width="360"
+              />
+              <h2 class="portfolio-title">Online Courses</h2>
+              <p class="portfolio-item">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Instagram Stories Concept
+              <img
+                src="./images/portfolio/img7.jpg"
+                alt="Instagram page"
+                width="360"
+              />
+              <h2 class="portfolio-title">Instagram Stories Concept</h2>
+              <p class="portfolio-item">Design</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Organic Food
+              <img
+                src="./images/portfolio/img8.jpg"
+                alt="Woman with groceries"
+                width="360"
+              />
+              <h2 class="portfolio-title">Organic Food</h2>
+              <p class="portfolio-item">Web Site</p>
+            </a>
+          </li>
+          <li>
+            <a class="link" href=""
+              >Fresh Coffee
+              <img
+                src="./images/portfolio/img9.jpg"
+                alt="A cup of coffee"
+                width="360"
+              />
+              <h2 class="portfolio-title">Fresh Coffee</h2>
+              <p class="portfolio-item">Web Site</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="" class="logo-footer"><span class="accent">Web</span>Studio</a>
-      <address>
-        <ul class="list">
-          <li>
-            <a
-              class="address"
-              href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-              >м. Київ, пр-т Лесі Українки, 26
-            </a>
-          </li>
-          <li>
-            <a class="contact-footer" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-footer" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <!--Footer section-->
+    <footer class="section footer">
+      <a class="footer-logo link" href="./index.html"
+        >Web<span class="footer-logo-studio">Studio</span></a
+      >
+      <p class="footer-list">
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
     </footer>
   </body>
 </html>
